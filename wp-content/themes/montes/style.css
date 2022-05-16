@@ -1,0 +1,825 @@
+/*
+Theme Name: Montes & Montes Advogados
+Text Domain: montes
+Author: Criativerso
+Author URI: https://criativerso.com.br/
+*/
+
+@font-face {
+  font-family: 'Book Antiqua';
+  src: url('BookAntiqua.eot');
+  src: url('BookAntiqua.eot?#iefix') format('embedded-opentype'),
+      url('BookAntiqua.woff2') format('woff2'),
+      url('BookAntiqua.woff') format('woff'),
+      url('BookAntiqua.ttf') format('truetype'),
+      url('BookAntiqua.svg#BookAntiqua') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+#social-icons {
+  position: fixed;
+  right: -100px;
+  top: 200px;
+  list-style: none;
+  padding: 0;
+  transition: 0.3s;
+}
+
+#social-icons.show {
+  right: 0 !important;
+}
+
+#social-icons li {
+  background-color: #b3b3b3;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  border: 1px solid #ffffff;
+}
+
+#social-icons li:hover {
+  opacity: 0.7;
+}
+
+#social-icons li:first-child {
+  border-radius: 15px 0 0 0;
+}
+
+#social-icons li:last-child {
+  border-radius: 0 0 0 15px;
+}
+
+#social-icons li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #ffffff !important;
+  border: 1px solid #cacaca !important;
+  margin: 0 5px;
+}
+
+.owl-dot.active {
+  background-color: #eaeaea !important;
+}
+
+#contato input[type='text'],
+#contato input[type='tel'],
+#contato input[type='email'],
+#contato textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+}
+
+#formularios input[type='text'],
+#formularios input[type='tel'],
+#formularios input[type='email'],
+#formularios textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+}
+
+textarea {
+  height: 130px;
+}
+
+.wpcf7-not-valid {
+  border: 3px solid darkred !important;
+}
+
+.wpcf7-not-valid-tip {
+  display: none !important;
+}
+
+#contato .wpcf7-response-output {
+  border: 0 !important;
+  color: #ffffff;
+}
+
+#formularios .wpcf7-response-output {
+  border: 0 !important;
+  color: #ffffff;
+}
+
+.btn-azul {
+  color: #ffffff !important;
+  padding: 12px 25px !important;
+  background-color: #ffffff !important;
+  border: 0 !important;
+  border-radius: 15px !important;
+  font-size: 20px !important;
+  transition: 0.3s !important;
+}
+
+.btn-azul:hover {
+  opacity: 0.8 !important;
+  color: #ffffff !important;
+}
+
+.modal {
+  z-index: 9999!important;
+}
+
+.modal-body p,
+.modal-body ul li {
+  font-size: 1.1rem!important;
+}
+
+#introducao {
+  background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/banner-principal.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#introducao #intro-conteudo {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 180px 80px;
+}
+
+#introducao #intro-conteudo h1 {
+  position: relative;
+  color: #ffffff;
+  font-size: 5.1rem!important;
+  line-height: 1;
+  padding: 0;
+  font-family: 'Book Antiqua';
+}
+
+#introducao #intro-conteudo h2 {
+  position: relative;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+  font-family: 'Book Antiqua';
+}
+
+#introducao #intro-conteudo h2::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  width: 35%;
+  height: 10px;
+  background-color: #e6320f;
+  left: 0;
+}
+
+#introducao #intro-conteudo h3 {
+  color: #FFFFFF;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+#visao {
+  background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/banner-visao.png');
+  background-size: cover;
+  padding: 50px 0;
+}
+
+#visao #conteudo-visao {
+  background-color: #ffffff;
+  padding: 70px 100px;
+}
+
+#visao #conteudo-visao h2 {
+  position: relative;
+  color: #e6320f;
+  font-size: 2.6rem;
+  display: table;
+  margin: 0 auto 40px;
+  font-family: 'Book Antiqua';
+  text-align: center;
+}
+
+#visao #conteudo-visao h2::before {
+  content: '';
+  position: absolute;
+  background-color: #e6320f;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+}
+
+#visao #conteudo-visao h2::after {
+  content: '';
+  position: absolute;
+  background-color: #e6320f;
+  width: 60%;
+  height: 2px;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+}
+
+#visao #conteudo-visao p {
+  text-align: center;
+}
+
+#areas-atuacao {
+  background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/fundo-areas-de-atuacao.png');
+  background-size: cover;
+  padding: 100px 0 120px;
+}
+
+#areas-atuacao button {
+  background-color: transparent!important;
+  border: 0!important;
+  padding: 0;
+}
+
+#areas-atuacao h2 {
+  position: relative;
+  color: #ffffff;
+  font-size: 2.6rem;
+  display: table;
+  margin: 0 auto 90px;
+  font-family: 'Book Antiqua';
+  text-align: center;
+}
+
+#areas-atuacao h2::before {
+  content: '';
+  position: absolute;
+  background-color: #ffffff;
+  width: 80%;
+  height: 2px;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+}
+
+#areas-atuacao h2::after {
+  content: '';
+  position: absolute;
+  background-color: #ffffff;
+  width: 40%;
+  height: 2px;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+}
+
+.btn-contato {
+  background-color: #ffffff;
+  color: #e6320f;
+  font-size: 2.2rem;
+  padding: 20px 25px;
+  margin-top: -80px;
+  display: inline-block;
+  transition: 0.3s;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  font-family: 'Book Antiqua';
+}
+
+.btn-contato:hover {
+  color: #e6320f;
+  opacity: 0.95;
+}
+
+#equipe {
+  background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/banner-equipe.png');
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0 120px;
+  margin-top: -60px;
+}
+
+#equipe h2 {
+  position: relative;
+  color: #000000;
+  font-size: 2.6rem;
+  display: table;
+  margin: 0 auto 90px;
+  font-family: 'Book Antiqua';
+}
+
+#equipe img {
+  width: 80%;
+  display: table;
+  margin: 0 auto;
+}
+
+#equipe h3 {
+  width: 80%;
+  display: table;
+  margin: 15px auto 0;
+  text-align: center;
+}
+
+#contato {
+  background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/fundo-contato.png');
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0 120px;
+}
+
+#contato h2 {
+  position: relative;
+  color: #ffffff;
+  font-size: 2.6rem;
+  font-family: 'Book Antiqua';
+  margin-bottom: 40px;
+}
+
+#contato ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+#contato ul li {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+#contato ul li a {
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  background-color: #FFFFFF!important;
+  border: 0!important;
+  color: #e6320f;
+  font-size: 1.4rem;
+  padding: 10px 25px;
+  transition: 0.3s;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  font-family: 'Book Antiqua';
+}
+
+input[type="submit"]:hover {
+  color: #e6320f;
+  opacity: 0.85!important;
+}
+
+.wpcf7-response-output {
+  text-align: center;
+}
+
+footer {
+  background-color: #1c1c1c;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p,
+footer p a {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-mobile {
+  position: fixed;
+  z-index: 9;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  background-color: rgba(255, 255, 255, 0.8)!important;
+  transition: 0.3s;
+}
+
+#menu-mobile.hide {
+  left: 100vw;
+}
+
+#menu-mobile ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-top: 70px;
+}
+
+#menu-mobile ul li {
+  margin: 20px 0;
+}
+
+#menu-mobile ul li a {
+  color: #000000;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.pre-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: #b3b3b3;
+  z-index: 999;
+}
+
+.pre-menu ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pre-menu ul li {
+  margin: 0 17.5px;
+}
+
+.pre-menu ul li a {
+  color: #ffffff;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.pre-menu ul li a:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .pre-menu {
+    padding-left: 20px;
+  }
+
+  .pre-menu ul {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1400px) {
+  .pre-menu {
+    padding-left: 65px;
+  }
+}
+
+.menu-desktop {
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+.menu-desktop img {
+  height: 70px;
+  width: auto;
+  margin-left: 5px;
+}
+
+@media (min-width: 1400px) {
+  .menu-desktop img {
+    margin-left: 50px;
+  }
+}
+
+.menu-desktop .container {
+  position: relative!important;
+}
+
+.menu-desktop ul {
+  position: absolute!important;
+  height: calc(70px + 20px);
+  padding: 0;
+  margin: 0;
+  right: 0;
+  top: -7px;
+  list-style: none;
+  display: flex;
+}
+
+.menu-desktop ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 35px!important;
+  font-weight: normal!important;
+  text-transform: uppercase;
+}
+
+.menu-desktop ul li a {
+  color: #000000!important;
+  font-weight: 400!important;
+  transition: 0.2s;
+}
+
+.menu-desktop ul li a:hover {
+  color: #434a54;
+  opacity: 0.7;
+}
+
+.menu-desktop ul li.azul {
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu-desktop ul li.azul a {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+#navMobile {
+  background-color: #FFFFFF;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+}
+
+#navMobile img {
+  height: 60px;
+  margin-top: 5px;
+  margin-left: 50%;
+  width: auto;
+  transform: translateX(-50%);
+}
+
+.toggle {
+  left: 0;
+}
+
+.toggle-menu {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2px 2px 2px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -ms-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+}
+
+.toggle .line1 {
+  background-color: #ffffff;
+  transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+}
+
+.toggle .line2 {
+  display: none;
+}
+
+.toggle .line3 {
+  background-color: #ffffff;
+  transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+}
+
+.toggle .toggle-menu {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  #introducao #intro-conteudo {
+    padding: 160px 40px 100px;
+  }
+  
+  #introducao #intro-conteudo h2::after {
+    width: 80%;
+  }
+  
+  #introducao #intro-conteudo h3 {
+    color: #FFFFFF;
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  #introducao #intro-conteudo h1 {
+    font-size: 3.2rem!important;
+  }
+  
+  #introducao #intro-conteudo h2 {
+    position: relative;
+    font-size: 1.3rem;
+  }
+
+  #visao #conteudo-visao {
+    padding: 20px 30px;
+  }
+
+  #visao #conteudo-visao h2 {
+    font-size: 2rem;
+  }
+
+  #visao #conteudo-visao p {
+    font-size: 1.2rem;
+  }
+  
+  #areas-atuacao {
+    padding: 70px 0 90px;
+  }
+
+  #areas-atuacao h2 {
+    font-size: 2rem;
+    margin: 0 auto 40px;
+  }
+
+  #areas-atuacao img {
+    margin-bottom: 15px;
+  }
+
+  .btn-contato {
+    font-size: 2rem;
+  }
+
+  #equipe {
+    background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/banner-equipe.png');
+    background-position: center;
+    background-size: cover;
+    padding: 110px 0 70px;
+    margin-top: -60px;
+  }
+
+  #equipe h2 {
+    font-size: 2rem;
+    margin: 0 auto 40px;
+  }
+
+  #equipe h3 {
+    margin: 15px auto 25px;
+  }
+
+  #contato {
+    padding: 70px 0 90px;
+  }
+
+  #contato h2 {
+    font-size: 2rem;
+  }
+
+  iframe {
+    height: 200px;
+    margin-bottom: 40px;
+  }
+}
+
+#intro-landing {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#intro-landing #content {
+  width: 100%;
+  transform: translateY(0);
+  padding: 200px 0 100px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#intro-landing #content h1 {
+  position: relative;
+  color: #ffffff;
+  font-size: 4.7rem!important;
+  line-height: 1;
+  padding: 0;
+  font-family: 'Book Antiqua';
+}
+
+#videobcg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height:auto;
+  width:auto;
+  z-index: 0;
+  object-fit: cover;
+}
+
+#contato-botao {
+  transform: translateY(-45px);
+  z-index: 20;
+}
+
+.contato-botao {
+  display: block;
+  background-color: #e6320f;
+  color: #FFFFFF;
+  padding: 20px 35px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.contato-botao:hover {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#conteudo {
+  padding: 50px 0 100px;
+}
+
+#conteudo h2 {
+  position: relative;
+  color: #e6320f;
+  font-size: 3.4rem!important;
+  line-height: 1;
+  padding: 0;
+  text-align: center;
+  font-family: 'Book Antiqua';
+  margin-bottom: 30px;
+}
+
+#conteudo p {
+  color: #000000;
+  text-align: center;
+}
+
+#itens h2 {
+  position: relative;
+  color: #e6320f;
+  font-size: 3.4rem!important;
+  line-height: 1;
+  padding: 0;
+  text-align: center;
+  font-family: 'Book Antiqua';
+  margin-bottom: 30px;
+}
+
+#itens img {
+  width: 100px;
+  display: table;
+  margin: 0 auto 20px;
+}
+
+#itens h3 {
+  text-align: center;
+  font-weight: bold;
+}

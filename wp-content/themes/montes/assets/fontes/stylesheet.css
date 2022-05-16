@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Book Antiqua';
+    src: url('BookAntiqua.eot');
+    src: url('BookAntiqua.eot?#iefix') format('embedded-opentype'),
+        url('BookAntiqua.woff2') format('woff2'),
+        url('BookAntiqua.woff') format('woff'),
+        url('BookAntiqua.ttf') format('truetype'),
+        url('BookAntiqua.svg#BookAntiqua') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
