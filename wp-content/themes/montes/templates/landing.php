@@ -9,13 +9,13 @@
 
     <section id="intro-landing">
         <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-            <source src="https://montesemontesadv.com.br/wp-content/themes/montes/materiais/video.mp4" type="video/mp4">
+            <source src="<?= get_field('video_de_fundo') ?>" type="video/mp4">
         </video>
         
         <div id="content">
             <div class="container">
                 <div class="col-12 col-md-9">
-                    <h1>ESTÁ PRECISANDO DE AJUDA PARA GARANTIR SUA APOSENTADORIA?</h1>
+                    <h1><?= get_field('titulo_inicial') ?></h1>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
     <section id="contato-botao">
         <div class="container">
             <div class="col-12">
-                <a href="#" class="contato-botao">
+                <a href="<?= get_field('link_do_whatsapp') ?>" target="_blank" class="contato-botao">
                     ENTRE EM CONTATO COM NOSSOS ESPECIALISTAS
                 </a>
             </div>
@@ -35,9 +35,9 @@
         <div class="container">
             <div class="row" style="justify-content: center;">
                 <div class="col-12 col-md-8 col-lg-7">
-                    <h2>HÁ MAIS DE 40 ANOS NO MEIO JURÍDICO</h2>
+                    <h2><?= get_field('titulo_da_secao_2') ?></h2>
                     <p>
-                        O escritório Montes & Montes Advogados está preparado para atuar nas principais questões tratas na área de <strong>Direito Previdenciário</strong>, oferecendo aos clientes sempre <strong> a melhor solução jurídica</strong>.
+                        <?= get_field('texto_da_secao_2') ?>
                     </p>
                 </div>
             </div>
@@ -48,16 +48,55 @@
         <div class="container">
             <div class="row" style="justify-content: center;">
                 <div class="col-12 col-md-10">
-                    <h2>A NOSSA ATUAÇÃO CONSULTIVA E CONTENCIOSA ENVOLVE:</h2>
+                    <h2><?= get_field('titulo_da_secao_3') ?></h2>
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+            <div></div>
+                <?php
+                    if(have_rows('itens')) {
+                        while( have_rows('itens') ) : the_row();
+                ?>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <img src="<?= get_sub_field('icone') ?>" alt="">
+                                <h3><?= get_sub_field('texto') ?></h3>
+                            </div>
+                <?php    
+                        endwhile;
+                    }
+                ?>
+            </div>
+        </div>
+    </section>
+
+    <section id="call-to-action">
+        <div class="container">
+            <div class="row" style="justify-content: center;">
+                <div class="col-12 col-lg-10">
+                    <img src="<?= get_field('icone_secao_4') ?>" alt="">
+                </div>
+                <div class="col-12 col-lg-10">
                     <p>
-                        O escritório Montes & Montes Advogados está preparado para atuar nas principais questões tratas na área de <strong>Direito Previdenciário</strong>, oferecendo aos clientes sempre <strong> a melhor solução jurídica</strong>.
+                        <?= get_field('texto_da_secao_4') ?>
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="chamada">
+        <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <img src="https://cdn.pixabay.com/photo/2017/10/16/21/51/accepted-2858655_960_720.png" alt="">
-                    <h3>Aposentadoria</h3>
+                <div class="col-12 col-md-6">
+                    <p>
+                        <?= get_field('texto_da_secao_5') ?>
+                    </p>
+                    <a href="<?= get_field('link_do_whatsapp') ?>" target="_blank" class="contato-botao">
+                        FALE CONOSCO VIA WHATSAPP
+                    </a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="<?= get_field('imagem_da_secao_5') ?>" alt="">
                 </div>
             </div>
         </div>

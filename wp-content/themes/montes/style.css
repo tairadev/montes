@@ -168,7 +168,7 @@ textarea {
 }
 
 #introducao {
-  background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/banner-principal.png');
+  background-image: url('https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/banner-principal.png');
   background-size: cover;
   background-position: center;
 }
@@ -215,7 +215,7 @@ textarea {
 }
 
 #visao {
-  background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/banner-visao.png');
+  background-image: url('https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/banner-visao.png');
   background-size: cover;
   padding: 50px 0;
 }
@@ -261,7 +261,7 @@ textarea {
 }
 
 #areas-atuacao {
-  background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/fundo-areas-de-atuacao.png');
+  background-image: url('https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/fundo-areas-de-atuacao.png');
   background-size: cover;
   padding: 100px 0 120px;
 }
@@ -322,7 +322,7 @@ textarea {
 }
 
 #equipe {
-  background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/banner-equipe.png');
+  background-image: url('https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/banner-equipe.png');
   background-position: center;
   background-size: cover;
   padding: 150px 0 120px;
@@ -352,7 +352,7 @@ textarea {
 }
 
 #contato {
-  background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/fundo-contato.png');
+  background-image: url('https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/fundo-contato.png');
   background-position: center;
   background-size: cover;
   padding: 120px 0 120px;
@@ -696,7 +696,7 @@ footer p a {
   }
 
   #equipe {
-    background-image: url('http://localhost/montes/wp-content/themes/montes/materiais/banner-equipe.png');
+    background-image: url('https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/banner-equipe.png');
     background-position: center;
     background-size: cover;
     padding: 110px 0 70px;
@@ -816,10 +816,41 @@ footer p a {
 #itens img {
   width: 100px;
   display: table;
-  margin: 0 auto 20px;
+  margin: 50px auto 15px;
 }
 
 #itens h3 {
   text-align: center;
   font-weight: bold;
+}
+
+#call-to-action {
+  padding: 100px 0;
+}
+
+#call-to-action img {
+  width: 200px;
+  display: table;
+  margin: 50px auto 15px;
+}
+
+#call-to-action p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#chamada {
+  padding-bottom: 100px;
+}
+
+#chamada .contato-botao {
+  padding: 20px 15px;
+  font-size: 1.8rem;
+  margin-top: 50px;
+}
+
+#chamada img {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
 }

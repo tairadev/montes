@@ -38,7 +38,7 @@
     </section>
 
     <section id="banner-meio">
-        <img src="http://localhost/montes/wp-content/themes/montes/materiais/banner-meio.png" alt="">
+        <img src="https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/banner-meio.png" alt="">
     </section>
 
     <section id="areas-atuacao">
@@ -49,27 +49,27 @@
                 </div>
                 <div class="col-6 col-md-6 col-lg-2">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#previdenciario" data-bs-whatever="@mdo">
-                        <img src="http://localhost/montes/wp-content/themes/montes/materiais/servico-1.png" alt="">
+                        <img src="https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/servico-1.png" alt="">
                     </button>
                 </div>
                 <div class="col-6 col-md-6 col-lg-2">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#consumidor" data-bs-whatever="@mdo">
-                        <img src="http://localhost/montes/wp-content/themes/montes/materiais/servico-2.png" alt="">
+                        <img src="https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/servico-2.png" alt="">
                     </button>
                 </div>
                 <div class="col-6 col-md-6 col-lg-2">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#familia" data-bs-whatever="@mdo">
-                        <img src="http://localhost/montes/wp-content/themes/montes/materiais/servico-3.png" alt="">
+                        <img src="https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/servico-3.png" alt="">
                     </button>
                 </div>
                 <div class="col-6 col-md-6 col-lg-2">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#civil" data-bs-whatever="@mdo">
-                        <img src="http://localhost/montes/wp-content/themes/montes/materiais/servico-4.png" alt="">
+                        <img src="https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/servico-4.png" alt="">
                     </button>
                 </div>
                 <div class="col-6 col-md-6 col-lg-2">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#empresarial" data-bs-whatever="@mdo">
-                        <img src="http://localhost/montes/wp-content/themes/montes/materiais/servico-5.png" alt="">
+                        <img src="https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/servico-5.png" alt="">
                     </button>
                 </div>
             </div>
@@ -87,15 +87,15 @@
                     <h2>NOSSA EQUIPE</h2>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4">
-                    <img src="http://localhost/montes/wp-content/themes/montes/materiais/sidnei.png" alt="">
+                    <img src="https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/sidnei.png" alt="">
                     <h3>Sidnei Montes</h3>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4">
-                    <img src="http://localhost/montes/wp-content/themes/montes/materiais/sueli.png" alt="">
+                    <img src="https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/sueli.png" alt="">
                     <h3>Sueli Miranda</h3>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4">
-                    <img src="http://localhost/montes/wp-content/themes/montes/materiais/diego.png" alt="">
+                    <img src="https://www.montesemontesadv.com.br/wp-content/themes/montes/materiais/diego.png" alt="">
                     <h3>Diego Montes</h3>
                 </div>
             </div>
